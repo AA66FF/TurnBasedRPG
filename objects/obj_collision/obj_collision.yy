@@ -2,11 +2,11 @@
     "id": "2ee040d5-cc31-43cb-b264-2ab2e2784ec7",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_wall",
+    "name": "obj_collision",
     "eventList": [
         
     ],
-    "maskSpriteId": "f39825b9-bd72-453e-9d33-f4fd64a827f6",
+    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "f39825b9-bd72-453e-9d33-f4fd64a827f6",
+    "spriteId": "f87b783e-0d2d-4313-836a-506abb063400",
     "visible": true
 }
