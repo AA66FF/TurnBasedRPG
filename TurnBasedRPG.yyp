@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "05fe5f9e-df10-4988-aea4-830dba70bbc2",
+            "Value": {
+                "id": "72f43282-adae-4bd2-970e-ce51989cfef2",
+                "resourcePath": "scripts\\macros\\macros.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0e43616f-a88b-4c02-9178-f2b1493baf3a",
             "Value": {
                 "id": "26a4f002-9716-4db6-9d98-3fcb02f98ba2",
@@ -68,14 +76,6 @@
                 "id": "4f607db9-389b-4de6-9875-7a6f3431e975",
                 "resourcePath": "views\\301c2a64-12aa-44c8-a9ac-a8dfd17df0d8.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "36f86385-2a48-466d-a153-04ec6b02f011",
-            "Value": {
-                "id": "76f5f4a7-4e0c-4703-8069-530308933544",
-                "resourcePath": "sprites\\spr_playerright\\spr_playerright.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "e1d8ab13-17c1-4d05-898f-8a54430d8323",
+            "Value": {
+                "id": "398d6749-839d-4724-b5c8-8bbab404b375",
+                "resourcePath": "sprites\\spr_playerright\\spr_playerright.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ee308a7a-e5c6-4e08-9de7-c9b9ac03c5f4",
             "Value": {
                 "id": "67e446b1-c0c6-4ad0-8966-f0732ccde0b0",
@@ -232,7 +240,7 @@
         }
     ],
     "script_order": [
-        
+        "05fe5f9e-df10-4988-aea4-830dba70bbc2"
     ],
     "tutorial": ""
 }
