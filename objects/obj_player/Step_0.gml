@@ -24,14 +24,14 @@ var _length = spd*(xAxis != 0 || yAxis != 0);
 xAxis = lengthdir_x(_length, _direction);
 yAxis = lengthdir_y(_length, _direction);
 
-if (place_meeting(x+xAxis, y, obj_collision)) {
-	while (!place_meeting(x+sign(xAxis), y, obj_collision)) {
+if (place_meeting(x+xAxis, y, obj_wall)) {
+	while (!place_meeting(x+sign(xAxis), y, obj_wall)) {
 		x += sign(xAxis);
 	}
 	xAxis = 0;
 }
-if (place_meeting(x, y+yAxis, obj_collision)) {
-	while (!place_meeting(x, y+sign(yAxis), obj_collision)) {
+if (place_meeting(x, y+yAxis, obj_wall)) {
+	while (!place_meeting(x, y+sign(yAxis), obj_wall)) {
 		y += sign(yAxis);
 	}
 	yAxis = 0;
