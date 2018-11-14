@@ -1,4 +1,3 @@
-spd = 0.4;
-range = 80;
+range = 40;
 fireCooldown = 0;
 fireCooldownAdd = 100;

@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0a4e41ac-4182-4703-86eb-310c40a0bbac",
+            "Value": {
+                "id": "f2e3905f-2480-43e0-b5e4-86617f3fa927",
+                "resourcePath": "objects\\obj_bleb1\\obj_bleb1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0e43616f-a88b-4c02-9178-f2b1493baf3a",
             "Value": {
                 "id": "26a4f002-9716-4db6-9d98-3fcb02f98ba2",
@@ -67,6 +75,14 @@
             "Value": {
                 "id": "0f2eeb2e-dd33-450b-af48-b075e250159e",
                 "resourcePath": "objects\\obj_wall\\obj_wall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2fef4f01-bac0-4972-b9b9-eb49aa8253fa",
+            "Value": {
+                "id": "bf0445ec-2ae6-4f95-8034-f7acf60655fa",
+                "resourcePath": "objects\\obj_bleb\\obj_bleb.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -116,6 +132,22 @@
                 "id": "653c3d7b-6d0a-465a-b778-1fe7592ae1ff",
                 "resourcePath": "views\\54d007a4-e9e7-45a7-b9fe-f1a73ec6dc55.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5aa7a182-5360-4906-a9e8-18b258128fa6",
+            "Value": {
+                "id": "3ab4307e-bd52-481f-9d2a-2c96b06915dc",
+                "resourcePath": "scripts\\getInput\\getInput.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6c822df8-073b-42d3-b6fd-f79a0f1e21c9",
+            "Value": {
+                "id": "e4e14f77-d20d-4d09-94e6-53f3f410d058",
+                "resourcePath": "objects\\obj_blebBall\\obj_blebBall.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -180,14 +212,6 @@
                 "id": "760b5540-66e7-4abb-8f09-bf7760a805eb",
                 "resourcePath": "views\\b016e277-e8e2-401e-8a72-8679a92193da.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "b8a19550-78ae-44e5-a364-1726b3248405",
-            "Value": {
-                "id": "1478d671-d774-4ce2-81eb-a287a972dac1",
-                "resourcePath": "objects\\obj_bleb\\obj_bleb.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -280,7 +304,8 @@
         }
     ],
     "script_order": [
-        "05fe5f9e-df10-4988-aea4-830dba70bbc2"
+        "05fe5f9e-df10-4988-aea4-830dba70bbc2",
+        "5aa7a182-5360-4906-a9e8-18b258128fa6"
     ],
     "tutorial": ""
 }
