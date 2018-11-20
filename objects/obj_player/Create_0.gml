@@ -1,7 +1,14 @@
 /// @desc Initialize
 xAxis = 0;
 yAxis = 0;
+deg = 0;
+spacePressed = false;
 spd = 1.5;
+fireRate = 50;
+cooldown = 0;
+magicLifetime = 200;
+magicSpeed = 2.5;
+hp = 10;
 dir = DOWN;
 action = IDLE;
 
@@ -9,8 +16,16 @@ view[RIGHT,IDLE] = spr_playerright;
 view[UP,IDLE] = spr_playerup;
 view[LEFT,IDLE] = spr_playerleft;
 view[DOWN,IDLE] = spr_playerdown;
+view[UPRIGHT,IDLE] = spr_playerright;
+view[DOWNRIGHT,IDLE] = spr_playerright;
+view[UPLEFT,IDLE] = spr_playerleft;
+view[DOWNLEFT,IDLE] = spr_playerleft;
 
 view[RIGHT,WALK] = spr_playerright;
 view[UP,WALK] = spr_playerup;
 view[LEFT,WALK] = spr_playerleft;
 view[DOWN,WALK] = spr_playerdown;
+view[UPRIGHT,WALK] = spr_playerright;
+view[DOWNRIGHT,WALK] = spr_playerright;
+view[UPLEFT,WALK] = spr_playerleft;
+view[DOWNLEFT,WALK] = spr_playerleft;

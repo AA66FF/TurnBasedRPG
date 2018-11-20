@@ -7,8 +7,5 @@ if (lifetime <= 0) {
 }
 
 if (place_meeting(x, y, obj_player)) {
-	instance_destroy(self,false);
-}
-if (place_meeting(x, y, obj_wall)) {
-	instance_destroy(self,false);
+	instance_destroy(self,true);
 }

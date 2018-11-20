@@ -2,17 +2,25 @@
 
 getInput();
 
-if (xAxis > 0) {
+if (xAxis > 0 and yAxis == 0 and cooldown < ceil(fireRate*0.8)) {
 	dir = RIGHT;
-} else if (xAxis < 0) {
+} else if (xAxis < 0 and yAxis == 0 and cooldown < ceil(fireRate*0.8)) {
 	dir = LEFT;
-} else if (yAxis > 0) {
+} else if (xAxis == 0 and yAxis > 0 and cooldown < ceil(fireRate*0.8)) {
 	dir = DOWN;
-} else if (yAxis < 0) {
+} else if (xAxis == 0 and yAxis < 0 and cooldown < ceil(fireRate*0.8)) {
 	dir = UP;
+} else if (xAxis > 0 and yAxis > 0 and cooldown < ceil(fireRate*0.8)) {
+	dir = DOWNRIGHT;
+} else if (xAxis < 0 and yAxis > 0 and cooldown < ceil(fireRate*0.8)) {
+	dir = DOWNLEFT;
+} else if (xAxis > 0 and yAxis < 0 and cooldown < ceil(fireRate*0.8)) {
+	dir = UPRIGHT;
+} else if (xAxis < 0 and yAxis < 0 and cooldown < ceil(fireRate*0.8)) {
+	dir = UPLEFT;
 }
 
-if (xAxis == 0 and yAxis == 0) {
+if (xAxis == 0 and yAxis == 0 or cooldown > ceil(fireRate*0.8)) {
 	action = IDLE;
 } else {
 	action = WALK;
@@ -37,8 +45,10 @@ if (place_meeting(x, y+yAxis, obj_wall)) {
 	yAxis = 0;
 }
 
-x += xAxis;
-y += yAxis;
+if (cooldown < ceil(fireRate*0.8)) {
+	x += xAxis;
+	y += yAxis;
+}
 
 sprite_index = view[dir,action];
 
@@ -48,3 +58,37 @@ if (action == WALK) {
 	image_speed = 0;
 	image_index = 0;
 }
+
+if (dir == UP) {
+	deg = 0;
+} else if (dir == UPRIGHT) {
+	deg = 45;
+} else if (dir == RIGHT) {
+	deg = 90;
+} else if (dir == DOWNRIGHT) {
+	deg = 135;
+} else if (dir == DOWN) {
+	deg = 180;
+} else if (dir == DOWNLEFT) {
+	deg = 225;
+} else if (dir == LEFT) {
+	deg = 270;
+} else if (dir == UPLEFT) {
+	deg = 315;
+}
+
+if (spacePressed == true and cooldown <= 0) {
+	cooldown = fireRate;
+}
+
+if (cooldown == ceil(fireRate*0.8)) {
+	ball = instance_create_layer(x,y,"Instances",obj_magic);
+	ball.vel = [sin(degtorad(deg))*magicSpeed,-cos(degtorad(deg))*magicSpeed];
+	ball.lifetime = magicLifetime;
+}
+
+if (hp <= 0) {
+	game_restart();
+}
+
+cooldown -= 1;

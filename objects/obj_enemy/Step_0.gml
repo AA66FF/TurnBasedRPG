@@ -1,8 +1,9 @@
 targetX = obj_player.x - x;
 targetY = obj_player.y - y;
+deg = getAngle(targetX,targetY);
 
-var _targetX = sign(targetX)*spd;
-var _targetY = sign(targetY)*spd;
+var _targetX = sin(deg)*spd;
+var _targetY = -cos(deg)*spd;
 
 if (place_meeting(x+_targetX, y, obj_wall)) {
 	while (!place_meeting(x+_targetX, y, obj_wall)) {
