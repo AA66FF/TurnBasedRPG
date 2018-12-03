@@ -24,15 +24,16 @@ for (var i = array_length_1d(enemies)-1; i > -1; i--) {
 }
 enemies = _newEnemies;
 
-show_debug_message(array_length_1d(enemies));
-
 if (room == rm_overworld and obj_player.y > 6010 and obj_player.x >= 4975 and obj_player.x <= 5031) {
 	room_goto(rm_cave);
 	obj_player.x = 167;
 	obj_player.y = -5;
 }
 
-if (room == rm_overworld and rng > 0.75 and array_length_1d(enemies) < 200) {
+if (room == rm_overworld and rng > 0.95 and array_length_1d(enemies) < 300) {
+	var _end = array_length_1d(enemies);
+	enemies[_end] = instance_create_layer(random(10000),random(6000),"Instances",obj_rawr);
+} else if (room == rm_overworld and rng > 0.75 and array_length_1d(enemies) < 300) {
 	var _end = array_length_1d(enemies);
 	enemies[_end] = instance_create_layer(random(10000),random(6000),"Instances",obj_bleb);
 }

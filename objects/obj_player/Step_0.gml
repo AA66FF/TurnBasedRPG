@@ -50,6 +50,11 @@ if (cooldown < ceil(fireRate*0.8)) {
 	y += yAxis;
 }
 
+if (regenCooldown <= 0 and hp < maxHp) {
+	hp += 1;
+	regenCooldown = regenCooldownAdd;
+}
+
 sprite_index = view[dir,action];
 
 if (action == WALK) {
@@ -101,3 +106,4 @@ if (hp <= 0) {
 }
 
 cooldown -= 1;
+regenCooldown -= 1;

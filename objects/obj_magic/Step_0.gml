@@ -9,6 +9,6 @@ if (lifetime <= 0) {
 for (var i = array_length_1d(obj_roomManager.enemies)-1; i > -1; i--) { 
 	if (place_meeting(x, y, obj_roomManager.enemies[i])) {
 		instance_destroy(self,false);
-		obj_roomManager.enemies[i].hp -= 1;
+		obj_roomManager.enemies[i].hp -= damage;
 	}
 }

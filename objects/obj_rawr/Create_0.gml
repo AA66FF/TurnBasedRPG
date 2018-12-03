@@ -1,0 +1,14 @@
+persistent = true;
+visionRange = 120;
+targetX = 0;
+targetY = 0;
+spd = 0.75;
+hp = 15;
+range = 40;
+ballSpd = 0;
+ballLifetime = 20;
+fireCooldown = 0;
+fireCooldownAdd = 60;
+moveCooldown = 0;
+moveCooldownAdd = 20;
+dead = false;
