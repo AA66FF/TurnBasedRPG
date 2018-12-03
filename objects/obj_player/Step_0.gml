@@ -85,6 +85,15 @@ if (cooldown == ceil(fireRate*0.8)) {
 	ball = instance_create_layer(x,y,"Instances",obj_magic);
 	ball.vel = [sin(degtorad(deg))*magicSpeed,-cos(degtorad(deg))*magicSpeed];
 	ball.lifetime = magicLifetime;
+	ball.damage = magicDamage;
+}
+
+if (experience >= experienceNeeded) {
+	level += 1;
+	experience = 0;
+	experienceNeeded += 10;
+	hp = maxHp;
+	sp += 1;
 }
 
 if (hp <= 0) {

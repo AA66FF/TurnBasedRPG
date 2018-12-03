@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "9c477f78-3d47-4875-878e-3b7825208d90",
+            "Value": {
+                "id": "6321e462-44f6-4883-b3e5-feccedffdd80",
+                "resourcePath": "scripts\\roomIndex\\roomIndex.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9de03025-5f08-4484-9df6-ab12d99d15b9",
             "Value": {
                 "id": "e8891191-b418-4b95-96ea-3982fdaeb4d4",
@@ -247,6 +255,14 @@
             }
         },
         {
+            "Key": "bc6acaf9-7d00-4fc6-a114-854c8d82ffee",
+            "Value": {
+                "id": "8f6e3fa2-5823-4c79-8f04-f3737004fdcf",
+                "resourcePath": "objects\\obj_hudManager\\obj_hudManager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c5b73e95-e7d0-4e86-928d-273d77832a12",
             "Value": {
                 "id": "d27bb739-530a-4c04-bbc8-69266c53c085",
@@ -276,6 +292,14 @@
                 "id": "dbfc9e60-f33c-4181-9cda-c5eb855b0f23",
                 "resourcePath": "views\\d72a6c55-f8f5-4fb8-a3df-95d9386f69ac.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "da618c8a-4679-4e20-9c21-b5b2d02ebddd",
+            "Value": {
+                "id": "b9ddc268-bd5b-4fca-afe0-4282f7cdeb29",
+                "resourcePath": "sprites\\spr_levelUpMenu\\spr_levelUpMenu.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -354,7 +378,8 @@
     "script_order": [
         "05fe5f9e-df10-4988-aea4-830dba70bbc2",
         "5aa7a182-5360-4906-a9e8-18b258128fa6",
-        "f93cf0da-c73e-4bfc-988a-d8fd311dfb13"
+        "f93cf0da-c73e-4bfc-988a-d8fd311dfb13",
+        "9c477f78-3d47-4875-878e-3b7825208d90"
     ],
     "tutorial": ""
 }

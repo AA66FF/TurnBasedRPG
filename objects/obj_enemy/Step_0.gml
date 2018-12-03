@@ -1,6 +1,7 @@
 targetX = obj_player.x - x;
 targetY = obj_player.y - y;
 deg = getAngle(targetX,targetY);
+visionRange = 200;
 
 var _targetX = sin(deg)*spd;
 var _targetY = -cos(deg)*spd;
@@ -19,5 +20,7 @@ if (place_meeting(x, y+_targetY, obj_wall)) {
 	_targetY = 0;
 }
 
-x += _targetX;
-y += _targetY;
+if (distance_to_point(obj_player.x,obj_player.y) < visionRange) {
+	x += _targetX;
+	y += _targetY;
+}

@@ -4,11 +4,17 @@ yAxis = 0;
 deg = 0;
 spacePressed = false;
 spd = 1.5;
+magicDamage = 1;
 fireRate = 50;
 cooldown = 0;
 magicLifetime = 200;
 magicSpeed = 2.5;
 hp = 10;
+maxHp = 10;
+sp = 0;
+level = 1;
+experience = 0;
+experienceNeeded = 10;
 dir = DOWN;
 action = IDLE;
 

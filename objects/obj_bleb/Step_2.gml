@@ -9,7 +9,7 @@ if (_dist < range and fireCooldown <= 0) {
 }
 
 if (hp <= 0) {
-	instance_destroy(self,false);
+	dead = true;
 }
 
 fireCooldown -= 1;
