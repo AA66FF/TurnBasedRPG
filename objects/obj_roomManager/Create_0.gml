@@ -1,4 +1,5 @@
 enemies = [];
+enemiesKilled = 0;
 enemyArchives = [];
 currentRoom = rm_cave;
 rng = 0;

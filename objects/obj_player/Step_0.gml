@@ -2,6 +2,8 @@
 
 getInput();
 
+shotsPerMinute = 3600/fireRate;
+
 if (xAxis > 0 and yAxis == 0 and cooldown < ceil(fireRate*0.8)) {
 	dir = RIGHT;
 } else if (xAxis < 0 and yAxis == 0 and cooldown < ceil(fireRate*0.8)) {
@@ -32,14 +34,14 @@ var _length = spd*(xAxis != 0 || yAxis != 0);
 xAxis = lengthdir_x(_length, _direction);
 yAxis = lengthdir_y(_length, _direction);
 
-if (place_meeting(x+xAxis, y, obj_wall)) {
-	while (!place_meeting(x+sign(xAxis), y, obj_wall)) {
+if (place_meeting(x+xAxis, y, obj_collider)) {
+	while (!place_meeting(x+sign(xAxis), y, obj_collider)) {
 		x += sign(xAxis);
 	}
 	xAxis = 0;
 }
-if (place_meeting(x, y+yAxis, obj_wall)) {
-	while (!place_meeting(x, y+sign(yAxis), obj_wall)) {
+if (place_meeting(x, y+yAxis, obj_collider)) {
+	while (!place_meeting(x, y+sign(yAxis), obj_collider)) {
 		y += sign(yAxis);
 	}
 	yAxis = 0;
@@ -83,7 +85,7 @@ if (dir == UP) {
 }
 
 if (spacePressed == true and cooldown <= 0) {
-	cooldown = fireRate;
+	cooldown = ceil(fireRate);
 }
 
 if (cooldown == ceil(fireRate*0.8)) {
@@ -95,14 +97,14 @@ if (cooldown == ceil(fireRate*0.8)) {
 
 if (experience >= experienceNeeded) {
 	level += 1;
-	experience = 0;
-	experienceNeeded += 10;
+	experience -= experienceNeeded;
+	experienceNeeded += 5;
 	hp = maxHp;
 	sp += 1;
 }
 
 if (hp <= 0) {
-	game_restart();
+	game_end();
 }
 
 cooldown -= 1;

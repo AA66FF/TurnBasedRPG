@@ -5,15 +5,15 @@ deg = getAngle(targetX,targetY);
 var _targetX = sin(deg)*spd;
 var _targetY = -cos(deg)*spd;
 
-if (place_meeting(x+_targetX, y, obj_player)) {
-	while (!place_meeting(x+_targetX, y, obj_player)) {
+if (place_meeting(x+_targetX, y, obj_wall)) {
+	while (!place_meeting(x+_targetX, y, obj_wall)) {
 		x += _targetX;
 	}
 	_targetX = 0;
 }
 
-if (place_meeting(x, y+_targetY, obj_player)) {
-	while (!place_meeting(x, y+_targetY, obj_player)) {
+if (place_meeting(x, y+_targetY, obj_wall)) {
+	while (!place_meeting(x, y+_targetY, obj_wall)) {
 		y += _targetY;
 	}
 	_targetY = 0;
