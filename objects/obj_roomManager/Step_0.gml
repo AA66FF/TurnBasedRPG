@@ -30,10 +30,10 @@ if (room == rm_overworld and obj_player.y > 6010 and obj_player.x >= 4975 and ob
 	obj_player.y = -5;
 }
 
-if (room == rm_overworld and rng > 0.95 and array_length_1d(enemies) < 300) {
+if (room == rm_overworld and rng > 0.98 and array_length_1d(enemies) < 500) {
 	var _end = array_length_1d(enemies);
 	enemies[_end] = instance_create_layer(random(10000),random(6000),"Instances",obj_rawr);
-} else if (room == rm_overworld and rng > 0.75 and array_length_1d(enemies) < 300) {
+} else if (room == rm_overworld and rng > 0.75 and array_length_1d(enemies) < 500) {
 	var _end = array_length_1d(enemies);
 	enemies[_end] = instance_create_layer(random(10000),random(6000),"Instances",obj_bleb);
 }

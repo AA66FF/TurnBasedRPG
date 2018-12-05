@@ -95,14 +95,6 @@
             }
         },
         {
-            "Key": "393bed18-ae1c-45c3-a6b7-59e27a7aed16",
-            "Value": {
-                "id": "6f76ab8c-bbe6-4bfc-8cce-acaed67703fc",
-                "resourcePath": "tilesets\\tileset0\\tileset0.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "3fc1e33d-e46e-4aba-85ab-7bf28d696fba",
             "Value": {
                 "id": "5fb7d51e-6c95-4408-ba26-7ff2001e4714",
